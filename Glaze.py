@@ -233,7 +233,7 @@ class Material:
         material = cls(names, '', '')
 
         for sForm, percent in percents:
-            if sForm is "LOI":
+            if sForm == "LOI":
                 continue
             form = Formula(sForm)
             frac = float(percent) / 100.0
